@@ -16,6 +16,7 @@ button {
 a:hover {
     text-decoration: none;
     cursor: pointer;
+    text-decoration: underline !important;
 }
 
 #page-loading-blocs-notifaction {
@@ -91,7 +92,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img/texture-paper.webp");
     background-size: 280px 280px;
 }
 
@@ -523,7 +524,8 @@ button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    opacity: 0;
+    opacity: 1;
+    /* Pour le faire apparaître ! */
     z-index: 500;
     transition: all .3s ease-in-out;
 }
@@ -687,6 +689,71 @@ p {
     font-size: 11px;
 }
 
+.row-title {
+    margin-bottom: 40px;
+}
+
+.presentation-title {
+    max-width: 630px;
+    margin: 0 auto;
+}
+
+.text-services {
+    font-size: 15px;
+}
+
+blockquote {
+    border: none;
+}
+
+blockquote p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+figcaption {
+    font-size: 18px;
+    color: #575757;
+}
+
+.text-collaboration {
+    padding-top: 30px;
+    font-size: 15px;
+}
+
+.text-collaboration a {
+    font-size: 17px;
+}
+
+#bloc-4-portfolio h2 {
+    margin-bottom: 45px;
+}
+
+.portfolio-item {
+    margin: 0 0 50px;
+}
+
+.text-realisations {
+    font-size: 15px;
+}
+
+.text-footer {
+    font-size: 18px;
+}
+
+.row-2 {
+    padding-top: 40px;
+}
+
+.row-2 li {
+    padding: 5px;
+}
+
+.row-2 li a {
+    color: #3f3f3f !important;
+    font-size: 16px;
+}
+
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
@@ -717,7 +784,7 @@ h2 {
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 17px;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333 !important;
@@ -734,7 +801,7 @@ h1 {
 }
 
 h4 {
-    color: #333333 !important;
+    color: #672100 !important;
 }
 
 .icons {
@@ -751,8 +818,8 @@ h4 {
 }
 
 .portfolio-row {
-    margin-bottom: 44px;
-    margin-top: 50px;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .avatar {
@@ -760,7 +827,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: #69532C;
     padding: 40px 40px 40px 40px;
 }
 
@@ -800,7 +867,7 @@ h4 {
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956 !important;
+    background: #f7b08f !important;
     color: #3f3f3f !important;
 }
 
@@ -826,19 +893,37 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("img/dots-bg.webp");
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background-image: url("img/lines-h2-bg.webp");
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
+    background-image: url("img/agence-la-panthere.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.webp");
+}
+
+.img-responsive {
+    /* Pour que les images aient la même largeur selon leur taille initiale*/
+    width: 100%;
+}
+
+.text-invitation-contact {
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.block-title {
+    padding: 70px 50px;
+}
+
+.contact-informations {
+    font-size: 15px;
 }
 
 @media (max-width: 1024px) {
@@ -1077,6 +1162,16 @@ h4 {
     .blocsapp-device-iphone5 img {
         width: 180px;
         height: 320px;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .social a:hover {
+        text-decoration: none !important;
     }
 }
 
