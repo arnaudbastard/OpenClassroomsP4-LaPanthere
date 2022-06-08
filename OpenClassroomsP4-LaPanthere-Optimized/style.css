@@ -532,6 +532,7 @@ button {
 
 .scrollToTop span {
     margin-top: 6px;
+    color: rgba(255, 255, 255, .9);
 }
 
 .showScrollTop {
@@ -593,6 +594,7 @@ a[data-lightbox]:hover img {
     left: 15px;
     right: 15px;
     bottom: 5px;
+    font-size: 14px;
 }
 
 .close-lightbox {
@@ -619,7 +621,7 @@ a[data-lightbox]:hover img {
 .next-lightbox,
 .prev-lightbox {
     font-size: 20px;
-    color: rgba(255, 255, 255, .9);
+    color: rgba(255, 255, 255, .9) !important;
     background: rgba(0, 0, 0, .5);
     transition: all .2s ease-in-out;
     position: absolute;
@@ -800,10 +802,6 @@ h1 {
     color: #333333 !important;
 }
 
-h4 {
-    color: #672100 !important;
-}
-
 .icons {
     margin-bottom: 14px;
     margin-top: 24px;
@@ -846,6 +844,10 @@ h4 {
 
 .bgc-atomic-tangerine {
     background-color: #F3976C;
+}
+
+.bgc-atomic-tangerine-alt {
+    background-color: #93593F;
 }
 
 .tc-white {
